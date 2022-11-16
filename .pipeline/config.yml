@@ -27,7 +27,7 @@ stages:
     cfSpace: "dev"
     cfAppName: "capmservice"
     cfCredentialsId: "deploy-to-cf"
-    tmsUpload: false
+    tmsUpload: true
 
 steps:
   artifactPrepareVersion:
@@ -38,3 +38,7 @@ steps:
   
   cloudFoundryDeploy:
     mtaDeployParameters: "-f --version-rule ALL"
+
+  tmsUpload:
+    nodeName: "qas1"
+    credentialId: "tms-sk"
