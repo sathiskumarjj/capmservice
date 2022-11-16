@@ -1,9 +1,9 @@
 ---
 general:
-  bulidTool: "mta"
+  buildTool: "mta"
 
 stages:
-  Bulid:
+  Build:
     mavenExcuteStaticCodeChecks: false
     npmExecuteLint: true
   
@@ -37,4 +37,4 @@ steps:
     failOnError: true
   
   cloudFoundryDeploy:
-    mtaDeployParameters: "-f --version-rule All"
+    mtaDeployParameters: "-f --version-rule ALL"
