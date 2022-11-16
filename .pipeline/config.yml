@@ -41,4 +41,4 @@ steps:
 
   tmsUpload:
     nodeName: "qas1"
-    credentialId: "tms-sk"
+    credentialsId: "tms-sk"
