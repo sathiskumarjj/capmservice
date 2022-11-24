@@ -14,7 +14,8 @@
         "sqlite3": "^5.0.4"
     },
     "scripts": {
-        "start": "cds run"
+        "start": "cds run",
+        "watch": "npx cds watch"
     },
     "engines": {
         "node": "^16.15"
@@ -47,8 +48,11 @@
     "cds": {
         "requires": {
             "db": {
-                "kind": "hana-cloud"
+                "kind": "sql"
             }
+        },
+        "hana": {
+            "deploy-format": "hdbtable"
         }
     }
 }
